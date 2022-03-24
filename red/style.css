@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+    --cor1: #074A59;
+    --cor2: #0A89A6;
+    --cor3: #0DB3D9;
+    --cor4: #99E2F2;
+    --cor5: #F0F2F2;
+
+    --font1: 'Audiowide', cursive;
+    --font2: 'Press Start 2P', cursive;
+    --font3: 'Baloo Tammudu 2', cursive;
+    --font4: 'Lora', serif, cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-color: rgba(0, 0, 0, 0.561);
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--font1);
+    color: whitesmoke;
+    box-shadow: 10px 10px 15px rgba(195, 193, 193, 0.664);
+}
+
+#intro {
+    background-color: rgba(0, 0, 0, 0.376);
+    margin: 3% auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.287);
+    color: whitesmoke;
+    text-align: center;
+    font-family: var(--font3);
+    border-radius: 10px;
+    max-width: 576px;
+}
+
+#intro h2 {
+    font-size: 1.2em;
+}
+
+#carrosel {
+    width: 576px;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.287);
+    overflow: hidden;
+}
+
+#carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 2880px;
+    height: 400px;
+}
+
+#carrosel li {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {left: 0px}
+    10% {left: 0px}
+    20% {left: -576px}
+    30% {left: -576px}
+    40% {left: -1152px}
+    50% {left: -1152px}
+    60% {left: -1728px}
+    70% {left: -1728px}
+    80% {left: -2304px}
+    90% {left: -2304px}
+    100% {left: 0px}
+}
+
+aside {
+    background-color: rgba(0, 0, 0, 0.376);
+    max-width: 576px;
+    margin: 5% auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.287);
+}
+
+aside li {
+    list-style: none;
+    font-family: var(--font3);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 3px;
+    font-size: 0.7em;
+    text-align: center;
+    font-family: var(--font3);
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}

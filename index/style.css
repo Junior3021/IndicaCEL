@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+    --cor1: #074A59;
+    --cor2: #0A89A6;
+    --cor3: #0DB3D9;
+    --cor4: #99E2F2;
+    --cor5: #F0F2F2;
+
+    --font1: 'Audiowide', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Baloo Tammudu 2', cursive;
+    --font4: 'Lora', serif, cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header > h1 {
+    background-image:  url(../Imagens/header/header.webp);
+    background-position: top right;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: var(--cor5); 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: var(--font1);
+    color: var(--cor5);
+    font-size: 9vw;
+}
+
+#dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 90px;
+    margin-top: -180px;  
+
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 20px 0px;
+    padding-left: 20%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.623);
+    
+}
+
+nav > a {
+    font-size: 1.8vw;    
+    padding: 10px 2vw;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: var(--font1);
+    border-radius: 10px;    
+    font-weight: bold;
+}
+
+nav > a:hover {
+    
+    border-bottom: 3px solid;    
+    transition-duration: 1s;
+}
+
+#intro {
+    
+    margin: 20px auto;
+    max-width: 75%;
+    max-height: 300px;
+    background-color:rgba(0, 0, 0, 0.322);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.294);
+    border-radius: 5px;    
+}
+
+#intro > p {
+
+    color: white;
+    font-family: var(--font4);    
+    font-size: 1.5vw;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.formulario {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    margin: 20px auto;
+    max-width: 70%;
+    padding: 20px;
+    font-family: var(--font3);
+    font-size: 1.2vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+    text-align: justify;    
+}
+
+.formulario > h2 {
+    padding-right: 30px;
+    color: whitesmoke;
+}
+
+label {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p7 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input {
+    position: relative;
+    vertical-align: middle;
+    top: 3px;
+    left: 1px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: whitesmoke;
+    padding: 3px;
+    font-size: 0.7em;
+    text-align: center;
+    font-family: var(--font3);
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+#btn {
+    padding: 10px;
+    margin: 10px auto;
+    font-family: var(--font1);
+    border-radius: 5px;
+    display: flex;
+    font-size: 1.1em;
+}
+
+#btn:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
