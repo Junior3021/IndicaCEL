@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
@@ -16,125 +16,100 @@
     --cor5: #F0F2F2;
 
     --font1: 'Audiowide', cursive;
-    --font2: 'Roboto', sans-serif;
+    --font2: 'Press Start 2P', cursive;
     --font3: 'Baloo Tammudu 2', cursive;
     --font4: 'Lora', serif, cursive;
 }
 
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
+html{
+    background-color: rgba(0, 0, 0, 0.561);
+}
 
-header > h1 {
-    background-image:  url(../Imagens/header/header.webp);
-    background-position: top right;
-    background-size: contain;
-    background-attachment: fixed;
-    background-color: var(--cor5); 
+header {
+    background-color: var(--cor1);
+    padding: 10px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    font-size: 1.5em;
     font-family: var(--font1);
-    color: var(--cor5);
-    font-size: 9vw;
-}
-
-#dark {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 90px;
-    margin-top: -180px;  
-
-}
-
-body {
-    background-color: rgba(0, 0, 0, 0.801);
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.322);
-    padding: 20px 0px;
-    padding-left: 20%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.623);
-    
-}
-
-nav > a {
-    font-size: 1.8vw;    
-    padding: 10px 2vw;
-    text-decoration: none;
     color: whitesmoke;
-    font-family: var(--font1);
-    border-radius: 10px;    
-    font-weight: bold;
-}
-
-nav > a:hover {
-    
-    border-bottom: 3px solid;    
-    transition-duration: 1s;
+    box-shadow: 10px 10px 15px rgba(195, 193, 193, 0.664);
 }
 
 #intro {
-    
-    margin: 20px auto;
-    max-width: 75%;
-    max-height: 300px;
-    background-color:rgba(0, 0, 0, 0.322);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.294);
-    border-radius: 5px;    
-}
-
-#intro > p {
-
-    color: white;
-    font-family: var(--font4);    
-    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.376);
+    margin: 3% auto;
     padding: 10px;
-    text-align: justify;
-
-}
-
-.formulario {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.322);
-    color: white;
-    margin: 20px auto;
-    max-width: 70%;
-    padding: 20px;
-    font-family: var(--font3);
-    font-size: 1.2vw;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
-    text-align: justify;    
-}
-
-.formulario > h2 {
-    padding-right: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.287);
     color: whitesmoke;
+    text-align: center;
+    font-family: var(--font3);
+    border-radius: 10px;
+    max-width: 576px;
 }
 
-label {
-    padding-left: 10px;
-    padding-right: 10px;
+#intro h2 {
+    font-size: 1.2em;
 }
 
-.p7 {
-    padding-left: 5px;
-    padding-right: 5px;
+#carrosel {
+    width: 576px;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.287);
+    overflow: hidden;
 }
 
-input {
+#carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 2880px;
+    height: 400px;
+}
+
+#carrosel li {
     position: relative;
-    vertical-align: middle;
-    top: 3px;
-    left: 1px;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {left: 0px}
+    10% {left: 0px}
+    20% {left: -576px}
+    30% {left: -576px}
+    40% {left: -1152px}
+    50% {left: -1152px}
+    60% {left: -1728px}
+    70% {left: -1728px}
+    80% {left: -2304px}
+    90% {left: -2304px}
+    100% {left: 0px}
+}
+
+aside {
+    background-color: rgba(0, 0, 0, 0.376);
+    max-width: 576px;
+    margin: 5% auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.287);
+}
+
+aside li {
+    list-style: none;
+    font-family: var(--font3);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: whitesmoke;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.322);
-    color: whitesmoke;
+    background-color: var(--cor1);
+    color: var(--cor2);
     padding: 3px;
     font-size: 0.7em;
     text-align: center;
@@ -143,25 +118,9 @@ footer {
 
 footer > p > a {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--cor3);
 }
 
 footer > p > a:hover {
     text-decoration: underline;
-}
-
-#btn {
-    padding: 10px;
-    margin: 10px auto;
-    font-family: var(--font1);
-    border-radius: 5px;
-    display: flex;
-    font-size: 1.1em;
-}
-
-#btn:hover {
-    background-color: var(--cor2);
-    color: var(--cor1);
-    font-size: 1.2em;
-    transition-duration: 0.3s;
 }
