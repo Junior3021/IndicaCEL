@@ -28,7 +28,7 @@
 
 
 header > h1 {
-    background-image:  url(../Imagens/header/header.webp);
+    background-image:  url(header.webp);
     background-position: top right;
     background-size: contain;
     background-attachment: fixed;
