@@ -43,9 +43,10 @@ header > h1 {
 
 #dark {
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 10vw;
-    padding-bottom: 10vh;
-    margin-top: -180px;  
+    padding: 140px;
+    margin-top: -280px;
+    
+      
 
 }
 
@@ -117,8 +118,8 @@ nav > a:hover {
 }
 
 label {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .p7 {
@@ -129,8 +130,7 @@ label {
 input {
     position: relative;
     vertical-align: middle;
-    top: 3px;
-    left: 1px;
+    top: 13px;
 }
 
 footer {

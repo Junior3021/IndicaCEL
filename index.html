@@ -8,6 +8,8 @@
     <title>IndicaCEL</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
+    
 
 </head>
 <header>
@@ -15,9 +17,12 @@
 </header>
 <div id="dark"></div>
 <nav>
-    <a href="https://www.tudocelular.com/curiosidade/noticias/n186874/top-10-celular-mais-buscado-em-fevereiro-de-2022.html" target="_blank" rel="external">Mais Buscados</a>
-    <a href="https://www.zoom.com.br/celular/deumzoom/celulares-top-de-linha?og=18000&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNLxhvnb6HYO31bhSXh3h9lI-7Fdk0S7Kqy7pg7WmmcD8ZBySNpDa5BoC2IUQAvD_BwE" target="_blank" rel="external">Top de Linha</a>
-    <a href="https://www.buscape.com.br/celular/conteudo/melhores-celulares-ate-1500?og=18000&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNGQXGfU3FYGFKi76MZvviVP3OIaA1vvfZUHP-oCvAIcMdsHtjDKFpxoCMSAQAvD_BwE" target="_blank" rel="external">Custo Beneficio</a>
+    <a href="https://www.tudocelular.com/curiosidade/noticias/n186874/top-10-celular-mais-buscado-em-fevereiro-de-2022.html"
+        target="_blank" rel="external">Mais Buscados</a>
+    <a href="https://www.zoom.com.br/celular/deumzoom/celulares-top-de-linha?og=18000&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNLxhvnb6HYO31bhSXh3h9lI-7Fdk0S7Kqy7pg7WmmcD8ZBySNpDa5BoC2IUQAvD_BwE"
+        target="_blank" rel="external">Top de Linha</a>
+    <a href="https://www.buscape.com.br/celular/conteudo/melhores-celulares-ate-1500?og=18000&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNGQXGfU3FYGFKi76MZvviVP3OIaA1vvfZUHP-oCvAIcMdsHtjDKFpxoCMSAQAvD_BwE"
+        target="_blank" rel="external">Custo Beneficio</a>
 </nav>
 
 <body>
@@ -35,11 +40,9 @@
         <div class="formulario" id="p1">
             <h2>Tamanho da tela :</h2>
             <input class="checkbox1" type="radio" name="p1" value="a1">
-            <label class="checkbox1l" for="p1a"> Até 4 polegadas</label>
+            <label for="checkbox1l"> Pequena à média</label>
             <input class="checkbox1" type="radio" name="p1" value="b1">
-            <label for="checkbox1l"> 4 ~ 5 polegadas</label>
-            <input class="checkbox1" type="radio" name="p1" value="c1">
-            <label for="checkbox1l"> 5 polegadas +</label>
+            <label for="checkbox1l"> Grande</label>
         </div>
         <div class="formulario" id="p2">
             <h2>Processador :</h2>
@@ -72,7 +75,7 @@
             <h2>Bateria mAh :</h2>
             <input class="checkbox5" type="radio" name="p5" value="a5">
             <label for="p5"> 1000 ~ 3000 mAh</label>
-            <input class="checkbox5" type="radio" name="p5" value="b5"> 
+            <input class="checkbox5" type="radio" name="p5" value="b5">
             <label for="p5"> 3001 ~ 5000 mAh</label>
             <input class="checkbox5" type="radio" name="p5" value="c5">
             <label for="p5"> 5000 mAh +</label>
@@ -88,7 +91,7 @@
         </div>
         <div class="formulario" id="p7">
             <h2>Preço :</h2>
-            <input class="checkbox7" type="radio" name="p7" value="a7">1
+            <input class="checkbox7" type="radio" name="p7" value="a7">
             <label class="p7" for="p7"> R$ 500,00 ~ R$ 1300,00</label>
             <input class="checkbox7" type="radio" name="p7" value="b7">
             <label class="p7" for="p7"> R$ 1301,00 ~ R$ 2500,00</label>
@@ -106,7 +109,9 @@
     <p id="resultado"></p>
 
     <footer>
-        <p>Site desenvolvido por <a href="https://github.com/Junior3021" target="_blank" rel="external">Adilson Junior</a> para o P.I da <a href="https://www.anchieta.br/" target="_blank" rel="external">Unianchieta</a></p>
+        <p>Site desenvolvido por <a href="https://github.com/Junior3021" target="_blank" rel="external">Adilson
+                Junior</a> para o P.I da <a href="https://www.anchieta.br/" target="_blank"
+                rel="external">Unianchieta</a></p>
     </footer>
 
     <script type="text/javascript">
@@ -120,21 +125,21 @@
             console.log(itensSelecionados)
             document.getElementById('resultado').innerHTML = 'Você Selecionou : ' + itensSelecionados;
 
-            if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'a7') {
+            if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'a7') {
                 window.location.assign("pag01.html");
 
                 //['c1', 'b2', 'b3', 'b4', 'c5', 'b6', 'a7']
-                //poco m3 , one fusion , mt g 30 , r note 9, a32
+                //poco m3 , one fusion , mt g 30 , redmi note 9, a32
 
             } else
-                if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'a7') {
+                if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'a7') {
                     window.location.assign("pag02.html");
 
                     //[c1,b2,b3,a4,c5,b6,a7]
                     //a12 , mtg 20
 
                 } else
-                    if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'a3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'a7') {
+                    if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'a3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'a7') {
                         window.location.assign("pag03.html");
 
                         //['c1', 'b2', 'a3', 'a4', 'b5', 'a6', 'a7']
@@ -142,7 +147,7 @@
 
 
                     } else
-                        if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'a7') {
+                        if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'a4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'a7') {
                             window.location.assign("pag04.html");
 
                             //['c1', 'b2', 'b3', 'a4', 'b5', 'a6', 'a7']
@@ -150,7 +155,7 @@
 
 
                         } else
-                            if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'b7') {
+                            if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'b7') {
                                 window.location.assign("pag05.html");
 
                                 //['c1', 'c2', 'c3', 'b4', 'c5', 'b6', 'b7']
@@ -159,21 +164,21 @@
 
 
                             } else
-                                if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'c4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'b7') {
+                                if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'c4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'b7') {
                                     window.location.assign("pag06.html");
 
                                     //['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'b7']
                                     //Xiaomi Red Note 10S, Samsung M52, Samsung	A32, Motorola 	G60
 
                                 } else
-                                    if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'b7') {
+                                    if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'c2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'b7') {
                                         window.location.assign("pag07.html");
 
                                         //['c1', 'c2', 'b3', 'b4', 'b5', 'b6', 'b7'] 
                                         //Samsung  A51, TCL	10 SE , Samsung	A21s, Samsung A22, Motorola G20
 
                                     } else
-                                        if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'a5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'c7') {
+                                        if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'a5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'c7') {
                                             window.location.assign("pag08.html");
 
                                             //['c1', 'b2', 'b3', 'b4', 'a5', 'a6', 'c7']
@@ -181,21 +186,21 @@
 
 
                                         } else
-                                            if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'c7') {
+                                            if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'c5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'c7') {
                                                 window.location.assign("pag09.html");
 
                                                 //['c1', 'b2', 'c3', 'b4', 'c5', 'c6', 'c7']
                                                 //Motorola Edge 20 Pro, Moto G100, Galaxy Note 20 , Galaxy Note 20 Ultra, Galaxy S21 Ultra
 
                                             } else
-                                                if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'c7') {
+                                                if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'c7') {
                                                     window.location.assign("pag10.html");
 
                                                     //['c1', 'b2', 'c3', 'b4', 'b5', 'c6', 'c7']
                                                     //galaxy s21 , xiami mi 11, motog 200
 
                                                 } else
-                                                    if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'd7') {
+                                                    if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'd7') {
                                                         window.location.assign("pag11.html");
 
                                                         //['c1', 'b2', 'c3', 'b4', 'b5', 'a6', 'd7']	
@@ -205,31 +210,80 @@
 
 
                                                     } else
-                                                        if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'd7') {
+                                                        if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'b6' && itensSelecionados[6] === 'd7') {
                                                             window.location.assign("pag12.html");
 
                                                             //['c1', 'b2', 'c3', 'b4', 'b5', 'b6', 'd7']
                                                             //TCL 20 pro, Iphone 13 pro max, Note 20 ultra
 
                                                         } else
-                                                            if (itensSelecionados[0] === 'c1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'd7') {
+                                                            if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'c3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'b5' && itensSelecionados[5] === 'c6' && itensSelecionados[6] === 'd7') {
                                                                 window.location.assign("pag13.html");
 
                                                                 //['c1', 'b2', 'c3', 'b4', 'b5', 'c6', 'd7']
                                                                 //Note 20 ultra, Galaxy Z Flip
 
                                                             } else
-                                                                if (itensSelecionados[0] === 'b1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'a5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'd7') {
+                                                                if (itensSelecionados[0] === 'a1' && itensSelecionados[1] === 'b2' && itensSelecionados[2] === 'b3' && itensSelecionados[3] === 'b4' && itensSelecionados[4] === 'a5' && itensSelecionados[5] === 'a6' && itensSelecionados[6] === 'd7') {
                                                                     window.location.assign("pag14.html");
 
-                                                                    //['b1', 'b2', 'b3', 'b4', 'a5', 'a6', 'd7']
+                                                                    //['a1', 'b2', 'b3', 'b4', 'a5', 'a6', 'd7']
                                                                     //IPhone 13 mini,IPhone 12 pro max, Galaxy Z Flip
 
-                                                                } else {
-                                                                    window.alert('SmartPhone não encontrado!     Pressione F5 e tente outra vez!');
+                                                                } else
+                                                                    if (itensSelecionados[0] === 'a1' && itensSelecionados[6] === 'a7') {
+                                                                        window.location.assign("pag17.html");
+
+                                                                        //['a1', 'a7']
+                                                                        // Moto-E6s, Infinix-HOT, LG-K62
+
+                                                                    } else
+                                                                        if (itensSelecionados[0] === 'a1' && itensSelecionados[6] === 'b7') {
+                                                                            window.location.assign("pag15.html");
+
+                                                                            //['a1', 'b7']
+                                                                            //Xiaomi MI 9 SE , Iphone SE , Samsung S20 FE, Moto G100
 
 
-                                                                }
+                                                                        } else
+                                                                            if (itensSelecionados[0] === 'a1' && itensSelecionados[6] === 'c7') {
+                                                                                window.location.assign("pag14.html");
+
+                                                                                //['a1', 'c7']
+                                                                                // Iphone 13 mini, Galaxy Z Flip
+
+                                                                            } else
+                                                                                if (itensSelecionados[0] === 'a1' && itensSelecionados[6] === 'd7') {
+                                                                                    window.location.assign("pag14.html");
+
+                                                                                    //['a1', 'd7']
+                                                                                    // Iphone 13 mini, Galaxy Z Flip
+
+                                                                                } else
+                                                                                    if (itensSelecionados[0] === 'b1' && itensSelecionados[6] === 'a7') {
+                                                                                        window.location.assign("pag03.html");
+
+                                                                                    } else
+                                                                                        if (itensSelecionados[0] === 'b1' && itensSelecionados[6] === 'b7') {
+                                                                                            window.location.assign("pag01.html");
+
+                                                                                            //['b1', 'b7']
+                                                                                            //poco m3 , one fusion , mt g 30 , redmi note 9, a32
+
+                                                                                        } else
+                                                                                            if (itensSelecionados[0] === 'b1' && itensSelecionados[6] === 'c7') {
+                                                                                                window.location.assign("pag09.html");
+
+                                                                                            } else
+                                                                                                if (itensSelecionados[0] === 'b1' && itensSelecionados[6] === 'd7') {
+                                                                                                    window.location.assign("pag12.html");
+
+
+                                                                                                } else {
+                                                                                                    window.alert('SmartPhone não encontrado!   Pressione F5 e tente outra vez!');
+
+
+                                                                                                }
         }
 
 
